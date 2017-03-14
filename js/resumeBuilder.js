@@ -18,7 +18,7 @@ var bio ={
     "skills" : [
         "Teamwork", "Time Management", "Critical Thinking", "Problem Solving"
     ],
-    "bioPic" : '/Users/cuongnguyen/Desktop/Udacity/Portfolio/Design mockup/Image/IMG_3666.JPG'
+    "bioPic" : "/Users/cuongnguyen/Desktop/Udacity/Portfolio/Design mockup/Image/IMG_3666.JPG"
 };
 
 //Education information
@@ -60,21 +60,21 @@ var work = {
     "jobs": [
         {
             "employer": "Orsini Restaurant",
-            "date": "2015",
+            "date": "03/2015 - 07/2015",
             "title": "Diswasher",
-            "description": "Washing plates and prepare some ingredient for head chef. Plus, how to learn kinfe-using skill"
+            "description": "This is my first part-time job when I have moved to Australia to study in 2015. It not only helped me learning how to earn money by myself but it also taught me several lessons in life. Moreover, I also learnt how to balance time for working and studying and at the end of this semester, I have collected enough money to participate in short-term training making coffee, which lead me to second job. My main duties in this job was washing plates, prepare ingredients for head chef and I also learnt kinef-using skills which benefits me a lot in cooking later on."
         },
         {
             "employer": "Hush Hush coffe",
-            "date": "2015",
+            "date": "08/2015 - 01/2016",
             "title": "Kitchen Hand",
-            "description": "Washing plates, prepare some ingredient for head chef. Preparing foods and serving on-the-way order for customers"
+            "description": "My second job is a kitchen hand in a small but lovely coffee shop at Camberwell arcade. It is not quite crowded coffee shop but have a lovely view in a small arcade in Camberwell Road. I have experienced an atmostphere of typical morning in Melbourne, the way people enjoying their cup of coffee before commuting to work. I also understand the unique coffee culture in Melbourne through the time I worked here. I really appreciate such experiences I have at Hush Hush Coffee."
         },
         {
             "employer": "Okra restaurant",
-            "date": "2016",
+            "date": "04/2016 - Now",
             "title": "Kitchen Hand",
-            "description": "Washing plates, preparing food for main course. Taking care all of the entree course with knowledge of Asian-fusion food including Thailand, Malaysia, Indonesia."
+            "description": "My third job in Melbourne, Australia, is a main kitchen hand in Asian-fusion restaurant in peaceful suburb, Camberwell. It is a nice working environment, good salary too and I enjoy cooking some entrees for our customers. I learnt to cook Asian entree at the time I worked there. It actually taught me a lot of skills which I do believe it will be useful for me for the rest of my life. It might be time management, teamwork, working under high pressure."
         }
     ]
 };
@@ -85,14 +85,14 @@ var projects = {
         {
             "title": "Animal Trading Card",
             "date": "2017",
-            "description": "Using fundamental knowledge in HTML5 and CSS3 to design an animal trading card",
+            "description": "This is my first project after I have completed short course of HTML and CSS. I have learnt fundamental components of how to use HTML and CSS to create a website. If HTML equipped me a knowledge to create content of any website, CSS provides a stunning tool to make it more beautiful. I also learnt how to use supported tool so-called Bootstrap to help me save time in designing a website with provided template.",
             "images": ["/Users/cuongnguyen/Desktop/Udacity/Portfolio/Design mockup/Image/IMG_3666.JPG"]
         },
         {
             "title": "Onine resume",
             "date": "2017",
-            "description": "Creating online resume using HTML5, CSS3 and JavaScript with hope to create a stunning resume containing all my information with impressive interaction",
-            "images": ["Image/IMG_3664.JPG", "Image/IMG_3666.JPG"]
+            "description": "Purpose of this project is teaching me how to apply knowledge which I have learnt in Introduction to Javascript combined with HTML and CSS to create a stunning resume which not only demonstrates my understanding in using front-end web development tools but it also shows a creative way to introduce myself to employers.",
+            "images": ["/Users/cuongnguyen/Desktop/Udacity/Portfolio/Design%20mockup/Image/IMG_3666.JPG"]
         }
     ]
 };
@@ -107,8 +107,9 @@ bio.display = function() {
     var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomemessage);
     var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
 
-    $("#header").prepend(formattedName);
+    //Must use prepend because we are adding things at the beginning of the header.
     $("#header").prepend(formattedRole);
+    $("#header").prepend(formattedName);
 
     //Changing message and picture
     $("#header").append(formattedMessage);
@@ -182,10 +183,10 @@ projects.display = function() {
         var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
         $(".project-entry:last").append(formattedTitle);
         
-        var formattedDate = HTMLprojectTitle.replace("%data%", projects.projects[project].date);
+        var formattedDate = HTMLprojectDates.replace("%data%", projects.projects[project].date);
         $(".project-entry:last").append(formattedDate);
         
-        var formattedDescription = HTMLprojectTitle.replace("%data%", projects.projects[project].description);
+        var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
         $(".project-entry:last").append(formattedDescription);
         
         if (projects.projects[project].images.length > 0){
