@@ -13,7 +13,9 @@ h6 {
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
-
+.role {
+    color: white;
+}
 .clear-fix {
   overflow: auto;
 }
@@ -68,7 +70,9 @@ h5 {
   padding: 10px 5%;
 
 }
-
+.flex-item {
+    display: flex;
+}
 
 .date-text {
   font-style: italic;
@@ -127,6 +131,7 @@ a {
   font-weight: bold;
   color: #fff;
     display: flex;
+    padding-left: 10px;
 }
 
 .gray {
