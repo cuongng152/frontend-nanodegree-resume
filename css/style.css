@@ -17,13 +17,21 @@ h6 {
 .clear-fix {
   overflow: auto;
 }
-
+h3 {
+    margin-left: 40px;
+    margin-bottom: 0px;
+}
+.url {
+    margin-top: 0px;
+}
 .education-entry,
 .work-entry,
 .project-entry {
   padding: 0 5%;
 }
-
+.education-entry {
+    margin-top: 20px;
+}
 h1 {
   font-size: 40px;
   color: #f5a623;
@@ -101,7 +109,7 @@ a {
 
 #skills-h3 {
   color: #f5ae23;
-  display: none;
+  display: flex;
 }
 
 .orange {
@@ -110,11 +118,15 @@ a {
 
 .orange-text {
   color: #f5ae23;
+    align-content: center;
+    display: flex;
+    text-align: center;
 }
 
 .white-text {
   font-weight: bold;
   color: #fff;
+    display: flex;
 }
 
 .gray {
@@ -136,14 +148,12 @@ a {
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
 }
 
 .flex-column {
   display: flex;
-  flex-direction: column;
   flex-wrap: nowrap;
   padding: 10px;
 }
