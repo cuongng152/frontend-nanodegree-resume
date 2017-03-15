@@ -14,7 +14,7 @@ var bio ={
         "github" : "cuongng152",
         "location" : "Sydney"
     },
-    "welcomemessage" : "Welcome to my resume",
+    "welcomeMessage" : "Welcome to my resume",
     "skills" : [
         "Teamwork", "Time Management", "Critical Thinking", "Problem Solving"
     ],
@@ -28,7 +28,7 @@ var education = {
             "name": "Swinburne University of Technology",
             "location": "Melbourne",
             "degree": "Master",
-            "majors": "Information Technology Business Analysis",
+            "majors": ["Information Technology Business Analysis"],
             "dates": "2016",
             "url": "www.Swinburne.edu.au "
         },
@@ -36,7 +36,7 @@ var education = {
             "name": "Academy of Finance",
             "location": "Hanoi",
             "degree": "Bachelor",
-            "majors": "Finance and Banking",
+            "majors": ["Finance and Banking"],
             "dates": "2014",
             "url": "www.hvtc.edu.vn"
         }
@@ -122,10 +122,10 @@ var projects = {
             "title": "Animal Trading Card",
             "dates": "03/2017",
             "description": "This is my first project after I have completed short course of HTML and CSS. I have learnt fundamental components of how to use HTML and CSS to create a website. If HTML equipped me a knowledge to create content of any website, CSS provides a stunning tool to make it more beautiful. I also learnt how to use supported tool so-called Bootstrap to help me save time in designing a website with provided template.",
-            "images": [" "]
+            "images": ["images/design-prototype.png"]
         },
         {
-            "title": "Onine resume",
+            "title": "Onine Resume",
             "dates": "04/2017",
             "description": "Purpose of this project is teaching me how to apply knowledge which I have learnt in Introduction to Javascript combined with HTML and CSS to create a stunning resume which not only demonstrates my understanding in using front-end web development tools but it also shows a creative way to introduce myself to employers.",
             "images": [" "]
@@ -158,7 +158,7 @@ bio.display = function() {
     var formattedName = HTMLheaderName.replace("%data%", bio.name);
     var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 
-    var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomemessage);
+    var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
     var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
 
     //Must use prepend because we are adding things at the beginning of the header.
@@ -256,13 +256,13 @@ education.display = function() {
         $("#education").append(HTMLschoolStart);
         
         var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
-        $(".education-entry:last").append(formattedName);
+        var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
+        
+        $(".education-entry:last").append(formattedName+formattedDegree);
         
         var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
         $(".education-entry:last").append(formattedLocation);
         
-        var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
-        $(".education-entry:last").append(formattedDegree);
         
         var formattedDate = HTMLschoolDates.replace("%data%", education.schools[school].dates);
         $(".education-entry:last").append(formattedDate);
@@ -278,10 +278,9 @@ education.display = function() {
         $("#education").append(HTMLschoolStart);
 
         var formattedcourseTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[onlineCourse].title);
-        $(".education-entry:last").append(formattedcourseTitle);
-
         var formattedcourseSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[onlineCourse].school);
-        $(".education-entry:last").append(formattedcourseSchool);
+            
+        $(".education-entry:last").append(formattedcourseTitle+formattedcourseSchool);
 
         var formattedDate = HTMLonlineDates.replace("%data%", education.onlineCourses[onlineCourse].dates);
         $(".education-entry:last").append(formattedDate);
