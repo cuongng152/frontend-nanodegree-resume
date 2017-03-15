@@ -8,7 +8,7 @@ This is empty on purpose! Your code to build the resume will go here.
 var bio ={
     "name" : "Cuong Nguyen",
     "role" :  "Web Developer",
-    "contact" : {
+    "contacts" : {
         "mobile" : "0450-766-930",
         "email" : "nmcuong152@gmail.com",
         "github" : "cuongng152",
@@ -26,31 +26,55 @@ var education = {
     "schools" : [
         {
             "name": "Swinburne University of Technology",
-            "city": "Melbourne - Australia",
+            "location": "Melbourne",
             "degree": "Master",
             "major": "Information Technology Business Analysis",
             "date": "2016",
         },
         {
             "name": "Academy of Finance",
-            "city": "Hanoi - Vietnam",
+            "location": "Hanoi",
             "degree": "Bachelor",
             "major": "Finance and Banking",
             "date": "2014",
         }
     ],
      "onlineCourses": [
+         {   
+             "name": "Front-End Web Developer",
+             "school": "Udacity",
+             "date": "2017",
+             "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
+         },
          {
-             "name": "Introduction to JavaScript",
+             "name": "Introduction to HTML, CSS and Responsive Web Design",
              "school": "Udacity",
              "date": "2017",
              "url": "https://www.udacity.com"
          },
          {
-             "name": "Front-End Web Developer",
+             "name": "Introduction to Javascript and jQuerry",
              "school": "Udacity",
              "date": "2017",
              "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
+         },
+         {
+             "name": "Object Oriented Javascript",
+             "school": "Udacity",
+             "date": "2017",
+             "url": "https://www.udacity.com"
+         },
+         {
+             "name": "Website Performance Optimization",
+             "school": "Udacity",
+             "date": "2017",
+             "url": "https://www.udacity.com"
+         },
+         {
+             "name": "Introduction to AJAX, Javascript Design Pattern and Google API",
+             "school": "Udacity",
+             "date": "2017",
+             "url": "https://www.udacity.com"
          }
      ]
 };
@@ -59,22 +83,28 @@ var education = {
 var work = {
     "jobs": [
         {
-            "employer": "Orsini Restaurant",
-            "date": "03/2015 - 07/2015",
-            "title": "Diswasher",
-            "description": "This is my first part-time job when I have moved to Australia to study in 2015. It not only helped me learning how to earn money by myself but it also taught me several lessons in life. Moreover, I also learnt how to balance time for working and studying and at the end of this semester, I have collected enough money to participate in short-term training making coffee, which lead me to second job. My main duties in this job was washing plates, prepare ingredients for head chef and I also learnt kinef-using skills which benefits me a lot in cooking later on."
-        },
-        {
-            "employer": "Hush Hush coffe",
-            "date": "08/2015 - 01/2016",
-            "title": "Kitchen Hand",
-            "description": "My second job is a kitchen hand in a small but lovely coffee shop at Camberwell arcade. It is not quite crowded coffee shop but have a lovely view in a small arcade in Camberwell Road. I have experienced an atmostphere of typical morning in Melbourne, the way people enjoying their cup of coffee before commuting to work. I also understand the unique coffee culture in Melbourne through the time I worked here. I really appreciate such experiences I have at Hush Hush Coffee."
+            "employer": "BitCoin Group",
+            "date": "07/2016 - 12/2016",
+            "title": "Junior Business Analyst Internship",
+            "description": "I am involved in a team responding to improve competitive advantages for Bitcoin Group in term of doing comparative analysis among different private blockchain database system. I am responsible for gathering all requirements, analyze it and prioritize before recommend testing those blockchain platforms."
         },
         {
             "employer": "Okra restaurant",
             "date": "04/2016 - Now",
             "title": "Kitchen Hand",
             "description": "My third job in Melbourne, Australia, is a main kitchen hand in Asian-fusion restaurant in peaceful suburb, Camberwell. It is a nice working environment, good salary too and I enjoy cooking some entrees for our customers. I learnt to cook Asian entree at the time I worked there. It actually taught me a lot of skills which I do believe it will be useful for me for the rest of my life. It might be time management, teamwork, working under high pressure."
+        },
+        {
+            "employer": "Hush Hush coffee",
+            "date": "08/2015 - 01/2016",
+            "title": "Kitchen Hand",
+            "description": "My second job is a kitchen hand in a small but lovely coffee shop at Camberwell arcade. It is not quite crowded coffee shop but have a lovely view in a small arcade in Camberwell Road. I have experienced an atmostphere of typical morning in Melbourne, the way people enjoying their cup of coffee before commuting to work. I also understand the unique coffee culture in Melbourne through the time I worked here. I really appreciate such experiences I have at Hush Hush Coffee."
+        },
+        {
+            "employer": "Orsini Restaurant",
+            "date": "03/2015 - 07/2015",
+            "title": "Diswasher",
+            "description": "This is my first part-time job when I have moved to Australia to study in 2015. It not only helped me learning how to earn money by myself but it also taught me several lessons in life. Moreover, I also learnt how to balance time for working and studying and at the end of this semester, I have collected enough money to participate in short-term training making coffee, which lead me to second job. My main duties in this job was washing plates, prepare ingredients for head chef and I also learnt kinef-using skills which benefits me a lot in cooking later on."
         }
     ]
 };
@@ -84,15 +114,33 @@ var projects = {
     "projects": [
         {
             "title": "Animal Trading Card",
-            "date": "2017",
+            "date": "03/2017",
             "description": "This is my first project after I have completed short course of HTML and CSS. I have learnt fundamental components of how to use HTML and CSS to create a website. If HTML equipped me a knowledge to create content of any website, CSS provides a stunning tool to make it more beautiful. I also learnt how to use supported tool so-called Bootstrap to help me save time in designing a website with provided template.",
-            "images": ["/Users/cuongnguyen/Desktop/Udacity/Portfolio/Design mockup/Image/IMG_3666.JPG"]
+            "images": [" "]
         },
         {
             "title": "Onine resume",
-            "date": "2017",
+            "date": "04/2017",
             "description": "Purpose of this project is teaching me how to apply knowledge which I have learnt in Introduction to Javascript combined with HTML and CSS to create a stunning resume which not only demonstrates my understanding in using front-end web development tools but it also shows a creative way to introduce myself to employers.",
-            "images": ["/Users/cuongnguyen/Desktop/Udacity/Portfolio/Design%20mockup/Image/IMG_3666.JPG"]
+            "images": [" "]
+        },
+        {
+            "title": "Classic Arcade Game Clone",
+            "date": "05/2017",
+            "description": "To be filled later",
+            "images": [" "]
+        },
+        {
+            "title": "Website Optimization",
+            "date": "04/2017",
+            "description": "To be filled later",
+            "images": [" "]  
+        },
+        {
+            "title": "Neighborhood Map",
+            "date": "04/2017",
+            "description": "To be filled later",
+            "images": [" "]
         }
     ]
 };
@@ -116,10 +164,10 @@ bio.display = function() {
     $("#header").append(formattedBioPic);
 
     //Chaning contact details
-    var formattedMoible = HTMLmobile.replace("%data%", bio.contact.mobile);
-    var formattedEmail = HTMLemail.replace("%data%", bio.contact.email);
-    var formattedGithub = HTMLgithub.replace("%data%", bio.contact.github);
-    var formattedLocation = HTMLlocation.replace("%data%", bio.contact.location);
+    var formattedMoible = HTMLmobile.replace("%data%", bio.contacts.mobile);
+    var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+    var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+    var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
 
     var id = ["#topContacts", "#footerContacts"];
     for (var i = 0; i <id.length; i++) {
@@ -148,7 +196,6 @@ bio.display = function() {
         $("#skills").append(formattedSkill);
     };
 };
-bio.display();
 
 //Changing job
 work.display = function() {
@@ -170,9 +217,6 @@ work.display = function() {
     }
 };
 
-work.display();
-
-
 //Changing projects 
 projects.display = function() {
     for (project in projects.projects) {
@@ -191,7 +235,7 @@ projects.display = function() {
         
         if (projects.projects[project].images.length > 0){
             for (image in projects.projects[project].images) {
-                var formattedImage = HTMLprojectImage.replace("%data", projects.projects[project].images[image]);
+                var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
                 $(".project-entry:last").append(formattedImage);
             }
         }
@@ -199,17 +243,16 @@ projects.display = function() {
     }
 };
 
-projects.display();
-
 //Display education's chools 
 education.display = function() {
+   
     for (school in education.schools) {
         $("#education").append(HTMLschoolStart);
         
         var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
         $(".education-entry:last").append(formattedName);
         
-        var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].city);
+        var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
         $(".education-entry:last").append(formattedLocation);
         
         var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
@@ -221,40 +264,41 @@ education.display = function() {
         var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
         $(".education-entry:last").append(formattedMajor);
     }
-        
-    for(onlineCourse in education.onlineCourses) {
-        $("#education").prepend(HTMLonlineClasses);
-        
+
+        $("#education").append(HTMLonlineClasses);
+        for(onlineCourse in education.onlineCourses) {
+        $("#education").append(HTMLschoolStart);
+
         var formattedcourseTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[onlineCourse].name);
         $(".education-entry:last").append(formattedcourseTitle);
-        
+
         var formattedcourseSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[onlineCourse].school);
         $(".education-entry:last").append(formattedcourseSchool);
-        
+
         var formattedDate = HTMLonlineDates.replace("%data%", education.onlineCourses[onlineCourse].date);
         $(".education-entry:last").append(formattedDate);
-        
+
         var formattedUrl = HTMLonlineURL.replace("%data%", education.onlineCourses[onlineCourse].url);
         $(".education-entry:last").append(formattedUrl);
-    };
+    }
 };
+
+
+bio.display();
 education.display();
+work.display();
+projects.display();
 
-
-
-//International name
-function inName(name) {
-    name = name.trim().split(" ");
-    console.log(name);
-    name[1] = name[1].toUpperCase();
-    name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toUpperCase();
-    
-    return name(0) + " " + name[1];
-}
-
-$('#main').append(internationalizeButton);
 //Adding a google map
 $("#mapDiv").append(googleMap);
+
+$(document).click(function(loc){
+  var x = loc.pageX;
+  var y = loc.pageY;
+                  
+  logClicks(x,y);
+                
+});
 
 
 
