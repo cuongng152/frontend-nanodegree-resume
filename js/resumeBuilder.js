@@ -18,7 +18,7 @@ var bio ={
     "skills" : [
         "Teamwork", "Time Management", "Critical Thinking", "Problem Solving"
     ],
-    "bioPic" : "/Users/cuongnguyen/Desktop/Udacity/Portfolio/Design mockup/Image/IMG_3666.JPG"
+    "biopic": 'images/IMG_3666.JPG'
 };
 
 //Education information
@@ -28,52 +28,54 @@ var education = {
             "name": "Swinburne University of Technology",
             "location": "Melbourne",
             "degree": "Master",
-            "major": "Information Technology Business Analysis",
-            "date": "2016",
+            "majors": "Information Technology Business Analysis",
+            "dates": "2016",
+            "url": "www.Swinburne.edu.au "
         },
         {
             "name": "Academy of Finance",
             "location": "Hanoi",
             "degree": "Bachelor",
-            "major": "Finance and Banking",
-            "date": "2014",
+            "majors": "Finance and Banking",
+            "dates": "2014",
+            "url": "www.hvtc.edu.vn"
         }
     ],
      "onlineCourses": [
          {   
-             "name": "Front-End Web Developer",
+             "title": "Front-End Web Developer",
              "school": "Udacity",
-             "date": "2017",
+             "dates": "2017",
              "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
          },
          {
-             "name": "Introduction to HTML, CSS and Responsive Web Design",
+             "title": "Introduction to HTML, CSS and Responsive Web Design",
              "school": "Udacity",
-             "date": "2017",
+             "dates": "2017",
              "url": "https://www.udacity.com"
          },
          {
-             "name": "Introduction to Javascript and jQuerry",
+             "title": "Introduction to Javascript and jQuerry",
              "school": "Udacity",
-             "date": "2017",
+             "dates": "2017",
              "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
          },
          {
-             "name": "Object Oriented Javascript",
+             "title": "Object Oriented Javascript",
              "school": "Udacity",
-             "date": "2017",
+             "dates": "2017",
              "url": "https://www.udacity.com"
          },
          {
-             "name": "Website Performance Optimization",
+             "title": "Website Performance Optimization",
              "school": "Udacity",
-             "date": "2017",
+             "dates": "2017",
              "url": "https://www.udacity.com"
          },
          {
-             "name": "Introduction to AJAX, Javascript Design Pattern and Google API",
+             "title": "Introduction to AJAX, Javascript Design Pattern and Google API",
              "school": "Udacity",
-             "date": "2017",
+             "dates": "2017",
              "url": "https://www.udacity.com"
          }
      ]
@@ -84,27 +86,31 @@ var work = {
     "jobs": [
         {
             "employer": "BitCoin Group",
-            "date": "07/2016 - 12/2016",
+            "dates": "07/2016 - 12/2016",
             "title": "Junior Business Analyst Internship",
-            "description": "I am involved in a team responding to improve competitive advantages for Bitcoin Group in term of doing comparative analysis among different private blockchain database system. I am responsible for gathering all requirements, analyze it and prioritize before recommend testing those blockchain platforms."
+            "description": "I am involved in a team responding to improve competitive advantages for Bitcoin Group in term of doing comparative analysis among different private blockchain database system. I am responsible for gathering all requirements, analyze it and prioritize before recommend testing those blockchain platforms.", 
+            "location": "Melbourne"
         },
         {
             "employer": "Okra restaurant",
-            "date": "04/2016 - Now",
+            "dates": "04/2016 - Now",
             "title": "Kitchen Hand",
-            "description": "My third job in Melbourne, Australia, is a main kitchen hand in Asian-fusion restaurant in peaceful suburb, Camberwell. It is a nice working environment, good salary too and I enjoy cooking some entrees for our customers. I learnt to cook Asian entree at the time I worked there. It actually taught me a lot of skills which I do believe it will be useful for me for the rest of my life. It might be time management, teamwork, working under high pressure."
+            "description": "My third job in Melbourne, Australia, is a main kitchen hand in Asian-fusion restaurant in peaceful suburb, Camberwell. It is a nice working environment, good salary too and I enjoy cooking some entrees for our customers. I learnt to cook Asian entree at the time I worked there. It actually taught me a lot of skills which I do believe it will be useful for me for the rest of my life. It might be time management, teamwork, working under high pressure.",
+            "location": "Melbourne"
         },
         {
             "employer": "Hush Hush coffee",
-            "date": "08/2015 - 01/2016",
+            "dates": "08/2015 - 01/2016",
             "title": "Kitchen Hand",
-            "description": "My second job is a kitchen hand in a small but lovely coffee shop at Camberwell arcade. It is not quite crowded coffee shop but have a lovely view in a small arcade in Camberwell Road. I have experienced an atmostphere of typical morning in Melbourne, the way people enjoying their cup of coffee before commuting to work. I also understand the unique coffee culture in Melbourne through the time I worked here. I really appreciate such experiences I have at Hush Hush Coffee."
+            "description": "My second job is a kitchen hand in a small but lovely coffee shop at Camberwell arcade. It is not quite crowded coffee shop but have a lovely view in a small arcade in Camberwell Road. I have experienced an atmostphere of typical morning in Melbourne, the way people enjoying their cup of coffee before commuting to work. I also understand the unique coffee culture in Melbourne through the time I worked here. I really appreciate such experiences I have at Hush Hush Coffee.",
+            "location": "Melbourne"
         },
         {
             "employer": "Orsini Restaurant",
-            "date": "03/2015 - 07/2015",
+            "dates": "03/2015 - 07/2015",
             "title": "Diswasher",
-            "description": "This is my first part-time job when I have moved to Australia to study in 2015. It not only helped me learning how to earn money by myself but it also taught me several lessons in life. Moreover, I also learnt how to balance time for working and studying and at the end of this semester, I have collected enough money to participate in short-term training making coffee, which lead me to second job. My main duties in this job was washing plates, prepare ingredients for head chef and I also learnt kinef-using skills which benefits me a lot in cooking later on."
+            "description": "This is my first part-time job when I have moved to Australia to study in 2015. It not only helped me learning how to earn money by myself but it also taught me several lessons in life. Moreover, I also learnt how to balance time for working and studying and at the end of this semester, I have collected enough money to participate in short-term training making coffee, which lead me to second job. My main duties in this job was washing plates, prepare ingredients for head chef and I also learnt kinef-using skills which benefits me a lot in cooking later on.",
+            "location": "Melbourne"
         }
     ]
 };
@@ -114,31 +120,31 @@ var projects = {
     "projects": [
         {
             "title": "Animal Trading Card",
-            "date": "03/2017",
+            "dates": "03/2017",
             "description": "This is my first project after I have completed short course of HTML and CSS. I have learnt fundamental components of how to use HTML and CSS to create a website. If HTML equipped me a knowledge to create content of any website, CSS provides a stunning tool to make it more beautiful. I also learnt how to use supported tool so-called Bootstrap to help me save time in designing a website with provided template.",
             "images": [" "]
         },
         {
             "title": "Onine resume",
-            "date": "04/2017",
+            "dates": "04/2017",
             "description": "Purpose of this project is teaching me how to apply knowledge which I have learnt in Introduction to Javascript combined with HTML and CSS to create a stunning resume which not only demonstrates my understanding in using front-end web development tools but it also shows a creative way to introduce myself to employers.",
             "images": [" "]
         },
         {
             "title": "Classic Arcade Game Clone",
-            "date": "05/2017",
+            "dates": "05/2017",
             "description": "To be filled later",
             "images": [" "]
         },
         {
             "title": "Website Optimization",
-            "date": "04/2017",
+            "dates": "04/2017",
             "description": "To be filled later",
             "images": [" "]  
         },
         {
             "title": "Neighborhood Map",
-            "date": "04/2017",
+            "dates": "04/2017",
             "description": "To be filled later",
             "images": [" "]
         }
@@ -153,7 +159,7 @@ bio.display = function() {
     var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 
     var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomemessage);
-    var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
+    var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
 
     //Must use prepend because we are adding things at the beginning of the header.
     $("#header").prepend(formattedRole);
@@ -209,7 +215,7 @@ work.display = function() {
         var formattedEmployerTitle = formattedEmployer + formattedTitle;
         $(".work-entry:last").append(formattedEmployerTitle);
 
-        var formattedDate = HTMLworkDates.replace("%data%", work.jobs[job].date);
+        var formattedDate = HTMLworkDates.replace("%data%", work.jobs[job].dates);
         $(".work-entry:last").append(formattedDate);
 
         var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
@@ -227,7 +233,7 @@ projects.display = function() {
         var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
         $(".project-entry:last").append(formattedTitle);
         
-        var formattedDate = HTMLprojectDates.replace("%data%", projects.projects[project].date);
+        var formattedDate = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
         $(".project-entry:last").append(formattedDate);
         
         var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
@@ -258,24 +264,26 @@ education.display = function() {
         var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
         $(".education-entry:last").append(formattedDegree);
         
-        var formattedDate = HTMLschoolDates.replace("%data%", education.schools[school].date);
+        var formattedDate = HTMLschoolDates.replace("%data%", education.schools[school].dates);
         $(".education-entry:last").append(formattedDate);
         
-        var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
+        var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].majors);
         $(".education-entry:last").append(formattedMajor);
+        
+        
     }
 
         $("#education").append(HTMLonlineClasses);
         for(onlineCourse in education.onlineCourses) {
         $("#education").append(HTMLschoolStart);
 
-        var formattedcourseTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[onlineCourse].name);
+        var formattedcourseTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[onlineCourse].title);
         $(".education-entry:last").append(formattedcourseTitle);
 
         var formattedcourseSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[onlineCourse].school);
         $(".education-entry:last").append(formattedcourseSchool);
 
-        var formattedDate = HTMLonlineDates.replace("%data%", education.onlineCourses[onlineCourse].date);
+        var formattedDate = HTMLonlineDates.replace("%data%", education.onlineCourses[onlineCourse].dates);
         $(".education-entry:last").append(formattedDate);
 
         var formattedUrl = HTMLonlineURL.replace("%data%", education.onlineCourses[onlineCourse].url);
